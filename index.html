@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/41fb75609d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Pronostico del tiempo</title>
+  </head>
+  <body>
+
+    <div class="contenedor-inicial" id="contenedor-inicial">
+      <h1 class="contenedor-inicial-titulo">¿Desea conceder el permiso para acceder a tu ubicación?</h1>
+      <p class="contenedor-inicial-texto">
+        Esto nos permitirá mostrarte la información de tu ubicación actual automáticamente.
+      </p>  
+    </div>
+    <div class="contenedor-global" id="contenedor-global">
+      <div class="contenedor-principal">
+        <button class="contenedor-principal-btnbuscar" id="btnAbrir-buscador">Buscar ubicación</button>
+        <button class="contenedor-principal-btnUbicacion" id="btnUbicacion-actual">
+          <i class="fa-solid fa-location-crosshairs"></i>
+        </button>
+        <div class="contenedor-principal-info">
+          <img id="info-icon" src="" alt="clima" class="info-icon" />
+          <span class="info-temperatura" id="info-temperatura"></span>
+          <span class="info-clima" id="info-clima"></span>
+          <span class="info-fecha" id="info-fecha"></span>
+          <div class="info-ciudad">
+            <i class="fa-solid fa-location-dot"></i>
+            <span id="info-ciudad"></span>
+            <img id="info-bandera" class="info-bandera" src="" alt="bandera"/>
+          </div>
+        </div>
+      </div>
+      <div class="contenedor-busqueda" id="contenedor-busqueda">
+        <i class="fa-solid fa-xmark search-close btnCerrar-buscador" id="btnCerrar-buscador"></i>
+       <div class="busqueda">
+        <input type="text" class="busqueda-input" id="busqueda-input" required>
+        <span class="busqueda-texto">Ciudad</span>
+       </div>
+       <button class="busqueda-button" id="busqueda-button">buscar</button>
+      </div>
+      <div class="contenedor-detalles">
+        <div class="contenedor-detalles-Medida">
+          <button class="detalles-Medida detalles-Medida_activo" id="medida-celcius">°C</button>
+          <button class="detalles-Medida" id="medida-farenhait">°F</button>
+        </div>
+        <div class="contenedor-detalles-dias" id="contenedor-detalles-dias"></div>
+        <div class="contenedor-detalles-destacados">
+          <span class="destacados-titulo">Datos destacados</span>
+          <div class="destacados">
+            <div class="destacados-datos">
+              <span class="destacados-datos-titulo">Vleocidad del viento</span>
+              <span class="destacados-datos-medida" id="dato-viento"></span>
+            </div>
+            <div class="destacados-datos">
+              <span class="destacados-datos-titulo">Humedad</span>
+              <span class="destacados-datos-medida" id="dato-humedad"></span>
+            </div>
+            <div class="destacados-datos">
+              <span class="destacados-datos-titulo">Visibilidad</span>
+              <span class="destacados-datos-medida" id="dato-visibilidad"></span>
+            </div>
+            <div class="destacados-datos">
+              <span class="destacados-datos-titulo">Presión atmosférica</span>
+              <span class="destacados-datos-medida" id="dato-presion"></span>
+            </div>
+          </div>
+        </div>
+        <div class="contenedor-detalles-desarrollo">
+          <a
+            href="https://github.com/cesarahumada11"
+            target="_blank"
+            class="detalles-desarrollo-texto"
+          >
+            Desarrollado por <span class="detalles-desarrollo-nombre">Cesar Ahumada
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
